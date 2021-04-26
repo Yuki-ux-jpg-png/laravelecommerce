@@ -20,7 +20,7 @@
 
 @endphp
 
-
+@endif(isset($cats))
     <div class="characteristics">
         <div class="container">
             <div class="row">
@@ -1783,7 +1783,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
 </div>
 
 
-
+@endif
 
   
 
