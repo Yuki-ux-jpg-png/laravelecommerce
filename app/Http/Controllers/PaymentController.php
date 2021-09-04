@@ -50,8 +50,7 @@ class PaymentController extends Controller
 		\Stripe\Stripe::setApiKey('sk_test_hgIwd4DLIo1EVFkN5cobW01400dcJ7MFpi');
 
 		// Token is created using Checkout or Elements!
-		// Get the payment token ID submitted by the form:
-		$token = $_POST['stripeToken'];
+		// Get the payment token ID submitted by the form:		
 
 		$charge = \Stripe\Charge::create([
 		    'amount' => $total*100,
