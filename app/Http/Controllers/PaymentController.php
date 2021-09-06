@@ -52,7 +52,7 @@ class PaymentController extends Controller
 		// Token is created using Checkout or Elements!
 		// Get the payment token ID submitted by the form:		
 
-		$charge = \Stripe\Charge::create([
+		$charge = \Stripe\PaymentIntent::create([
 		    'amount' => $total*100,
 		    'currency' => 'usd',
 		    'description' => 'Udemy Ecommerce Details',
